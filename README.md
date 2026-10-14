@@ -10,8 +10,9 @@ have one place to live.
 
 ## Install
 
-Unzip the addon into `World of Warcraft/_retail_/Interface/AddOns/` so the folder
-is `AddOns/MythicPlusPersonalPlayerRatings`. Then reload the game.
+Get the addon from [CurseForge](https://www.curseforge.com/projects/1745387), or
+unzip it into `World of Warcraft/_retail_/Interface/AddOns/` so the folder is
+`AddOns/MythicPlusPersonalPlayerRatings`. Then reload the game.
 
 ## Using it
 
