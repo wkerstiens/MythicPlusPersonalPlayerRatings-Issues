@@ -54,9 +54,9 @@ first:
 | `/mpppr rate Name-Realm flag` | Rate from chat |
 | `/mpppr export` / `/mpppr import` | Open Share / Backup |
 | `/mpppr last` | Re-open the rating popup for your most recent run |
-| `/mpppr undo [cleanup|purge]` | Restore the last cleanup or automatic purge |
+| `/mpppr undo [cleanup\|purge]` | Restore the last cleanup or automatic purge |
 | `/mpppr config` | Print the current options |
-| `/mpppr toggle tooltips|lfgicons|lfghighlight|popup|autotag|notify|minimap` | Flip a feature |
+| `/mpppr toggle tooltips\|lfgicons\|lfghighlight\|popup\|autotag\|notify\|minimap` | Flip a feature |
 
 Things worth knowing:
 
