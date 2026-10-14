@@ -16,18 +16,57 @@ unzip it into `World of Warcraft/_retail_/Interface/AddOns/` so the folder is
 
 ## Using it
 
-- `/mpppr` or `/ratings` opens the management window (also the minimap button).
-- `/mpppr target` opens the editor for your current target.
-- `/mpppr rate Name-Realm good|neutral|avoid` quick-rates from chat.
-- `/mpppr export` / `/mpppr import` open the Share / Backup window.
-- `/mpppr last` re-opens the rating popup for your most recent run.
-- `/mpppr config` shows the options; `/mpppr toggle tooltips|lfgicons|popup|autotag|notify` flips one.
+### The window
+
+`/mpppr` or `/ratings` (or the minimap button, or the AddOn Compartment button
+next to the minimap) opens the window. It has three tabs, and always opens on the
+first:
+
+- **Ratings**: the Good / Neutral / Avoid / Unrated sections with live counts. Search
+  matches names, people, notes and tags. Click a column header (Character, Runs,
+  Last seen) to sort, and again to reverse. Click a row to edit it; the red X
+  deletes it (two clicks).
+- **Clean up data**: remove characters by rating and by days since last seen, with
+  a live count and a two-click confirm; set how many days before unrated players
+  are purged automatically; and undo the last cleanup or the last automatic purge.
+- **Config**: switch features on and off (tooltips, Group Finder icons and
+  highlights, the rate-your-group popup, the right-click entry, auto-linking
+  Battle.net friends, join announcements, the Avoid sound and screen alert, the
+  minimap button), edit the auto-avoid realms, and open Share / Backup.
+
+### Rating someone
+
+- In the editor: a flag (Good / Neutral / Avoid; click the selected one to clear
+  it), tags, a note, and a link to a person.
+- Right-click a player (unit frame, party, raid, target, or a Group Finder entry or
+  applicant) and use **M+ Ratings**.
+- After a key, the rate-your-group popup lists everyone you ran with.
+- From chat: `/mpppr rate Name-Realm good|neutral|avoid`, or `/mpppr target` to edit
+  your current target.
+
+### Commands
+
+| Command | What it does |
+|---|---|
+| `/mpppr` or `/ratings` | Open the window |
+| `/mpppr settings` | Open the Config tab |
+| `/mpppr target` | Edit your current target |
+| `/mpppr rate Name-Realm flag` | Rate from chat |
+| `/mpppr export` / `/mpppr import` | Open Share / Backup |
+| `/mpppr last` | Re-open the rating popup for your most recent run |
+| `/mpppr undo [cleanup|purge]` | Restore the last cleanup or automatic purge |
+| `/mpppr config` | Print the current options |
+| `/mpppr toggle tooltips|lfgicons|lfghighlight|popup|autotag|notify|minimap` | Flip a feature |
 
 Things worth knowing:
 
 - Ratings are stored account-wide and never broadcast. Sharing is a copyable
-  export string you hand over yourself.
-- Importing only fills blanks. It never overwrites a rating or note you made.
+  export string you hand over yourself, and importing only fills blanks: it never
+  overwrites a rating, note or tag you made.
+- Players with no flag, note, tag or person link are removed once you have not
+  grouped with them for a number of days (7 by default; 0 turns it off). Days away
+  from the game count, and nothing is purged until a full window after you first
+  load the addon. Anything you rate, note, tag or link is kept.
 - Group Finder internals change between patches. If the icons stop appearing
   after a patch, say so in an issue; tooltips are unaffected.
 
