@@ -1,0 +1,39 @@
+name: Bug report
+description: Something is wrong or broken
+labels: [bug]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened, and what did you expect?
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Addon version
+      description: Shown in the AddOns list on the character-select screen.
+    validations:
+      required: true
+  - type: dropdown
+    id: where
+    attributes:
+      label: Where did it happen?
+      options:
+        - Management window / minimap button
+        - Rating popup after a key
+        - Tooltips
+        - Group Finder icons or highlights
+        - Export / import
+        - Group tracking or BattleTag linking
+        - Somewhere else
+  - type: textarea
+    id: error
+    attributes:
+      label: Lua error text
+      description: If there was an error popup, paste it here.
+      render: text
+  - type: textarea
+    id: extra
+    attributes:
+      label: Screenshots or anything else
