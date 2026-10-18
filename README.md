@@ -82,3 +82,18 @@ Things worth knowing:
 
 Exports contain character names and your notes. Remove anything you would rather
 not share.
+## Optional: find a player's Raider.IO main
+
+`link_alts.py` (with `realms.json` beside it) looks up everyone you rated Avoid
+on Raider.IO. If their owner declared a main there, the main is added with the
+same rating, linked to the same person, with a note saying which character it
+came from. It is a plain Python 3 script and is not part of the addon download.
+
+1. Download both files into `World of Warcraft/_retail_/Interface/AddOns/MythicPlusPersonalPlayerRatings/`.
+2. Close WoW (it rewrites your ratings when you log out and would undo the change).
+3. Run `python3 link_alts.py` for a dry run, then `python3 link_alts.py --apply`.
+
+Each character is looked up once; the "Raider.IO main already checked" box in
+the editor controls that. Raider.IO only exposes a declared main, never a list
+of alts. Run with `--help` for options.
+
