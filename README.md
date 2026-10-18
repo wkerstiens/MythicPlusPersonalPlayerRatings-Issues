@@ -70,18 +70,6 @@ Things worth knowing:
 - Group Finder internals change between patches. If the icons stop appearing
   after a patch, say so in an issue; tooltips are unaffected.
 
-## Posting an issue
-
-1. [Search the existing issues](../../issues) first; yours may already be there.
-2. [Open a new issue](../../issues/new/choose) and pick *Bug report* or *Suggestion*.
-3. Include, as far as you can:
-   - what you expected and what happened instead
-   - the addon version (the AddOns list on the character-select screen)
-   - any Lua error text (an addon such as BugSack makes these easy to copy)
-   - a screenshot, if it is a display problem
-
-Exports contain character names and your notes. Remove anything you would rather
-not share.
 ## Optional: find a player's Raider.IO main
 
 `link_alts.py` (with `realms.json` beside it) looks up everyone you rated Avoid
@@ -97,3 +85,15 @@ Each character is looked up once; the "Raider.IO main already checked" box in
 the editor controls that. Raider.IO only exposes a declared main, never a list
 of alts. Run with `--help` for options.
 
+## Posting an issue
+
+1. [Search the existing issues](../../issues) first; yours may already be there.
+2. [Open a new issue](../../issues/new/choose) and pick *Bug report* or *Suggestion*.
+3. Include, as far as you can:
+   - what you expected and what happened instead
+   - the addon version (the AddOns list on the character-select screen)
+   - any Lua error text (an addon such as BugSack makes these easy to copy)
+   - a screenshot, if it is a display problem
+
+Exports contain character names and your notes. Remove anything you would rather
+not share.
